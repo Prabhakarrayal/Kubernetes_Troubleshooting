@@ -2,14 +2,13 @@
 
 ## Fixing `kubectl` Configuration and Restoring Cluster Access
 
-> **Style:** Simple, notebook-style notes with the technical terms
-> explained in everyday language.\
-> **Environment:** A local Kubernetes cluster with one control-plane
+> **Environment:** A Kubernetes cluster with one control-plane
 > node and two worker nodes.
 
 ------------------------------------------------------------------------
 
 ## 1. What happened?
+WE HAD A K'8 CLUSTER OF 3 NODES, 1 CONTROLLER AND 2 WORKERS IN 3 DIFFERENT VM'S(Virtual Machine)
 
 After the worker virtual machines had been shut down and worker 1 was
 started again, I tried to check my Kubernetes cluster from the
@@ -95,8 +94,8 @@ shutting down the VMs caused it.
 
   **`Running` pod**                   Kubernetes reports that the pod is
                                       running. This alone does not prove
-                                      the application is reachable from
-                                      every network.
+                                      the application is reachable from every pod
+
   -----------------------------------------------------------------------
 
 ### The key idea
