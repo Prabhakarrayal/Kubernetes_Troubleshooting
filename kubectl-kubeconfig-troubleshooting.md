@@ -137,7 +137,6 @@ was running. This did not, by itself, prove that the whole cluster was
 healthy.
 
 > Note: `systemctl status containerd --no-pager` is the correct command.
-> `systemctl containerd --no-pager` is missing the `status` action.
 
 ### Step 2 --- Check the selected Kubernetes context
 
